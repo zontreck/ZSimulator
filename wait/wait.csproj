@@ -15,5 +15,8 @@
     <OutputPath>..\Simulator\bin\debpub</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\debug</OutputPath>
+  </PropertyGroup>
 
 </Project>

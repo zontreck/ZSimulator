@@ -15,6 +15,10 @@
     <OutputPath>..\Simulator\bin\debpub</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\debug</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Ronz.Compression" Version="17.9.21.3" />
   </ItemGroup>
