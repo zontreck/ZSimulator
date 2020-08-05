@@ -243,7 +243,7 @@ namespace AutoUpdater
                     OS1 = "osx";
                 }
                 if (Directory.Exists("update")) Directory.Delete("update", true);
-                Directory.Move(".tmp/Simulator/bin/" + OS1 + "/" + OS, "update");
+                Directory.Move(".tmp/Simulator/bin/debpub/" + OS1 + "/" + OS, "update");
                 Directory.Delete(".tmp", true);
                 if(!isWindows)
                     Process.Start("chmod", "+x " + Path.Combine(Directory.GetCurrentDirectory(), "update/AutoUpdater"));
