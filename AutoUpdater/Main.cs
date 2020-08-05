@@ -195,7 +195,7 @@ namespace AutoUpdater
                     wc.DownloadProgressChanged += Wc_DownloadProgressChanged;
                     wc.DownloadFileCompleted += Wc_DownloadFileCompleted;
 
-                    HttpWebRequest hwr_srv = HttpWebRequest.CreateHttp("https://raw.githubusercontent.com/zontreck/BotBuildChain/master/CIServer.txt");
+                    HttpWebRequest hwr_srv = HttpWebRequest.CreateHttp("https://raw.githubusercontent.com/zontreck/ZSimulator/master/CIServer.txt");
                     hwr_srv.Method = "GET";
                     HttpWebResponse hwre = (HttpWebResponse)hwr_srv.GetResponse();
                     StreamReader reader = new StreamReader(hwre.GetResponseStream());
@@ -203,7 +203,7 @@ namespace AutoUpdater
 
                     Console.WriteLine("Found CI SERVER: " + CIServer);
 
-                    string ARCHIVE_URL = $"{CIServer.TrimEnd('\n')}job/Bot/lastSuccessfulBuild/artifact/";
+                    string ARCHIVE_URL = $"{CIServer.TrimEnd('\n')}job/ZSimulator/lastSuccessfulBuild/artifact/";
                     if (isWindows) ARCHIVE_URL += "windows.tar";
                     if (isLinux) ARCHIVE_URL += "linux.tar";
                     if (isMac) ARCHIVE_URL += "osx.tar";
