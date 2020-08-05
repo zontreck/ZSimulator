@@ -6,7 +6,8 @@ namespace Simulator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to ZNI Metaverse Simulator");
+            Console.WriteLine("Reading Configuration File");
         }
     }
 }
